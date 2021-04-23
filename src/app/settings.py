@@ -130,5 +130,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 BASE_SITE_URL = "http://localhost:8000/"
 SHORT_URL_ID_LENGTH = 6
